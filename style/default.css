@@ -1,3 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+body {
+    background-image: url(/pictures/fond_etoiles_02.png);
+    overflow: hidden;
+    font-family: 'Roboto';
+    margin: 50% 0 0 0;
+    position: relative;
+}
+
+.ecran_tv {
+    display: flex;
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    perspective: 450px;
+}
+
+.animation {
+    color: #ffc909;
+    font-size: 3vw;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-align: justify;
+    position: relative;
+    animation: starwars 60s linear forwards;
+}
+
+.animation h2, h3{
+    text-align: center;
+}
+
+@keyframes starwars {
+    from {
+        top: 0;
+        transform: translateZ(0) rotateX(20deg);
+        /* transform: rotateX(20deg); */
+    }
+    to {
+        top: -7500px;
+        transform: translateZ(-2500px) rotateX(21deg);
+        /* transform: rotateX(21deg); */
+    }
+}
+
+
+
+
+
+
+
+
+
 /* Infos
 
 Jaune Star Wars Impérial ==> #ffe436
@@ -6,7 +59,7 @@ Jaune Star Wars Impérial ==> #ffe436
 
 /* SECTIONS */
 
-body {
+/* body {
     margin :0;
     background-color: black;
     color: #ffe436;
@@ -24,10 +77,10 @@ footer {
     background-color: black;
     padding-top: 15px;
     padding-bottom: 5px;
-}
+} */
 
 /* NAVIGATION */
-
+/* 
 nav ol li{
     display: inline;
     margin: 15px;
@@ -37,10 +90,10 @@ nav{
     margin: auto;
     text-align: center;
 }
-
+ */
 
 /* TITRES */
-
+/* 
 h1 {
     color: black;
     font-size: 4em;
@@ -60,20 +113,20 @@ h4 {
     margin: auto;
     text-align: center;
 }
-
+ */
 
 /* ID  */
-
+/* 
 #starwars {
     width: 960px;
     height: auto;
     margin: auto;
-}
+} */
 
 
 /* CLASS */
 
-.animation {
+/* .animation {
     max-width: 30em;
     margin: 3em auto 2em;
     border: 1em solid #F0F0FF;
@@ -106,3 +159,4 @@ h4 {
   p{
     font-size: 1.5em;
   }
+   */
